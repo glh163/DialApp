@@ -1,0 +1,21 @@
+name: DialApp
+options:
+  bundleIdPrefix: com.demo
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  DialApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: DialApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.demo.dialapp
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        INFOPLIST_FILE: DialApp/Info.plist
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGNING_ALLOWED: "NO"
